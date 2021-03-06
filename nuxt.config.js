@@ -4,12 +4,15 @@ export default {
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  router: {
+    base: '/avatar-doll/'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'avatar-doll',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'zh-TW'
     },
     meta: [
       { charset: 'utf-8' },
