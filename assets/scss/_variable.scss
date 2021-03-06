@@ -1,0 +1,25 @@
+// ----------
+// Custom Variable
+// ----------
+@mixin size($w, $h:$w) {
+  width: $w;
+  height: $h;
+}
+
+@mixin fz($fw, $sizeValue: 16, $lh: $sizeValue * 1.6, $level: 1) {
+  font-weight: $fw;
+  font-size: ($sizeValue / 16) + rem;
+  line-height: ($lh / 16) + rem;
+}
+
+@mixin background($position, $size, $repeat) {
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
