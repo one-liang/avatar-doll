@@ -11,7 +11,3 @@ export default {
   name: 'Select'
 }
 </script>
-
-<style lang="scss" scoped>
-@import url("~/assets/select.scss");
-</style>
