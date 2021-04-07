@@ -39,7 +39,7 @@
     </div>
     <div class="w-full lg:w-7/12">
       <!-- 選項 -->
-      <ul class="flex max-w-xs mx-auto overflow-x-auto overflow-y-hidden text-center lg:mb-4 lg:flex-wrap lg:max-w-max">
+      <ul class="flex mx-auto overflow-x-auto overflow-y-hidden text-center max-w-screen lg:mb-4 lg:flex-wrap lg:max-w-max">
         <li class="flex-1 lg:mr-4 lg:mb-4">
           <button :class="[tab === 'skin' ? 'bg-purple-lighter' : 'bg-purple-light']" class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none" @click="tab = 'skin'">
             膚色

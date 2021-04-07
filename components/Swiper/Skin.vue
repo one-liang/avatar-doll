@@ -6,7 +6,7 @@
         :key="`Skin_${skin}`"
         class="swiper-slide"
       >
-        <button :class="`skin_${skin}`" class="w-20 h-20 border-2 rounded-full border-gray-dark focus:outline-none" type="button" @click="skinClick(skin)" />
+        <button :class="{selected: skin === activeItem, [`skin_${skin}`]: `skin_${skin}` }" class="relative w-20 h-20 border-2 rounded-full border-gray-dark focus:outline-none" type="button" @click="skinClick(skin)" />
       </div>
     </div>
   </div>
@@ -21,7 +21,8 @@ export default {
   name: 'SwiperSkin',
   data () {
     return {
-      swiper: null
+      swiper: null,
+      activeItem: null
     }
   },
   mounted () {
@@ -41,6 +42,7 @@ export default {
     skinClick (item) {
       // eslint-disable-next-line no-console
       console.log(item)
+      this.activeItem = item
     }
   }
 }
@@ -55,5 +57,14 @@ export default {
 }
 ::v-deep .swiper-slide {
   @apply w-20 h-20 !important;
+}
+.selected {
+  @apply border-4 border-white !important;
+
+  &::before {
+    @apply flex items-center justify-center absolute right-0 bottom-0 bg-green text-white border-2 border-white rounded-full w-9 h-9 text-xl !important;
+
+    content: "✔";
+  }
 }
 </style>
