@@ -49,6 +49,9 @@ module.exports = {
       minHeight: {
         80: '20rem',
         96: '24rem'
+      },
+      maxWidth: {
+        screen: '100vw'
       }
     }
   },
