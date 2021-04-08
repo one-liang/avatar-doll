@@ -9,7 +9,7 @@
 <script>
 // eslint-disable-next-line import/no-named-as-default
 import Swiper from 'swiper/bundle'
-import 'swiper/swiper-bundle.css'
+import 'swiper/swiper-bundle.min.css'
 
 export default {
   name: 'SwiperMultiple',
@@ -32,7 +32,7 @@ export default {
       breakpoints: {
         767: {
           touchRatio: 0,
-          spaceBetween: 8
+          spaceBetween: 12
         }
       }
     })

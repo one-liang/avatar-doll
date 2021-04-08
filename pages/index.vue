@@ -93,7 +93,7 @@
       </ul>
 
       <!-- 選項內容 -->
-      <div class="py-4 mx-auto bg-purple-lighter lg:bg-transparent">
+      <div class="h-full py-4 mx-auto bg-purple-lighter lg:bg-transparent">
         <SwiperSkin v-if="tab === 'skin'" />
         <SwiperBody v-else-if="tab === 'body'" />
         <SwiperMouth v-else-if="tab === 'mouth'" />

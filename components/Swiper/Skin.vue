@@ -15,7 +15,7 @@
 <script>
 // eslint-disable-next-line import/no-named-as-default
 import Swiper from 'swiper/bundle'
-import 'swiper/swiper-bundle.css'
+import 'swiper/swiper-bundle.min.css'
 
 export default {
   name: 'SwiperSkin',
@@ -50,8 +50,8 @@ export default {
 </script>
 
 <style scoped>
-::v-deep .swiper-container {
-  @apply px-5 !important;
+.swiper-container {
+  @apply h-44 px-5 !important;
 }
 ::v-deep .swiper-wrapper {
   @apply justify-center;
