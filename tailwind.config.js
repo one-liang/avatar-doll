@@ -9,19 +9,6 @@ module.exports = {
     fontFamily: {
       sans: ['Roboto', 'Microsoft JhengHei', 'sans-serif']
     },
-    zIndex: {
-      1: 1,
-      2: 2,
-      3: 3,
-      4: 4,
-      5: 5,
-      6: 6,
-      7: 7,
-      8: 8,
-      9: 9,
-      11: 11,
-      12: 12
-    },
     extend: {
       colors: {
         purple: {
@@ -52,6 +39,22 @@ module.exports = {
       },
       maxWidth: {
         screen: '100vw'
+      },
+      zIndex: {
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4,
+        5: 5,
+        6: 6,
+        7: 7,
+        8: 8,
+        9: 9,
+        11: 11,
+        12: 12
+      },
+      scale: {
+        200: '2'
       }
     }
   },
