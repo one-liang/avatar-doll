@@ -37,6 +37,7 @@ export default {
     onClick (item) {
       // eslint-disable-next-line no-console
       console.log('book: ', item)
+      this.$store.commit('changeBook', item)
       this.activeItem = item
     }
   }

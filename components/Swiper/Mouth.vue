@@ -37,6 +37,7 @@ export default {
     onClick (item) {
       // eslint-disable-next-line no-console
       console.log('mouth: ', item)
+      this.$store.commit('changeMouth', item)
       this.activeItem = item
     }
   }

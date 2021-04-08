@@ -4,32 +4,7 @@
   >
     <div class="flex flex-col items-center justify-center w-full lg:w-5/12">
       <!-- avatar -->
-      <div class="relative mb-6 bg-white border-8 w-52 h-52 border-gray-light">
-        <!-- 膚色 + 左手 + 配件 // head + left-hand + object -->
-
-        <!-- 衣服 -->
-        <div ref="body" class="body_2 z-1 layer" />
-        <!-- 頭 -->
-        <div ref="head" class="head_1 z-2 layer" />
-        <!-- 書本 -->
-        <div ref="book" class="book_1 z-3 layer" />
-        <!-- 左手 -->
-        <div ref="left-hand" class="left-hand_1 z-4 layer" />
-        <!-- 鼻子 -->
-        <div ref="nose" class="nose_1 z-5 layer" />
-        <!-- 眼睛 -->
-        <div ref="eyes" class="eyes_1 z-6 layer" />
-        <!-- 眼鏡 -->
-        <div ref="glasses" class="glasses_1 z-7 layer" />
-        <!-- 嘴巴 -->
-        <div ref="mouth" class="mouth_1 z-8 layer" />
-        <!-- 頭髮 -->
-        <div ref="hair" class="hair_1 z-9 layer" />
-        <!-- 配件 -->
-        <div ref="object" class="z-10 cake_1 layer" />
-        <!-- 動物 -->
-        <div ref="animal" class="animal_2 z-11 layer" />
-      </div>
+      <Avatar />
       <div class="flex items-center justify-center mx-auto mb-5 space-x-4">
         <button class="btn" type="button">
           隨機鈕

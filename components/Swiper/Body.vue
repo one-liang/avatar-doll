@@ -12,7 +12,7 @@
         :class="{
           'selected__wrap': body === activeItem,
         }"
-        class="relative w-20 h-20 overflow-hidden border-2 rounded-full border-gray-dark bg-white"
+        class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
         <button
           :class="`body_${body}`"
@@ -37,6 +37,7 @@ export default {
     onClick (item) {
       // eslint-disable-next-line no-console
       console.log('body: ', item)
+      this.$store.commit('changeBody', item)
       this.activeItem = item
     }
   }

@@ -13,7 +13,7 @@
           :class="{
             'selected__wrap': skin === activeItem,
           }"
-          class="relative w-20 h-20 overflow-hidden border-2 rounded-full border-gray-dark bg-white"
+          class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
         >
           <button
             :class="`skin_${skin}`"
@@ -58,6 +58,7 @@ export default {
     onClick (item) {
       // eslint-disable-next-line no-console
       console.log('skin: ', item)
+      this.$store.commit('changeSkin', item)
       this.activeItem = item
     }
   }

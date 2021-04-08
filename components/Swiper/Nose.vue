@@ -12,7 +12,7 @@
         :class="{
           'selected__wrap': nose === activeItem,
         }"
-        class="relative w-20 h-20 overflow-hidden border-2 rounded-full border-gray-dark bg-white"
+        class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
         <button
           :class="`nose_${nose}`"
@@ -37,6 +37,7 @@ export default {
     onClick (item) {
       // eslint-disable-next-line no-console
       console.log('nose: ', item)
+      this.$store.commit('changeNose', item)
       this.activeItem = item
     }
   }
