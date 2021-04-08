@@ -14,13 +14,13 @@
     <!-- 眼睛 -->
     <div ref="eyes" :class="`eyes_${eyesClass}`" class="z-6 layer" />
     <!-- 眼鏡 -->
-    <div ref="glasses" :class="`glasses_${glassesClass}`" class="glasses_1 z-7 layer" />
+    <div ref="glasses" :class="`glasses_${glassesClass}`" class="z-7 layer" />
     <!-- 嘴巴 -->
     <div ref="mouth" :class="`mouth_${mouthClass}`" class="z-8 layer" />
     <!-- 頭髮 -->
     <div ref="hair" :class="`hair_${hairClass}`" class="z-9 layer" />
     <!-- 配件 -->
-    <div ref="object" class="z-10 cake_1 layer" />
+    <div ref="object" :class="`${objectClass}_${skinClass}`" class="z-10 layer" />
     <!-- 動物 -->
     <div ref="animal" :class="`animal_${animalClass}`" class="z-11 layer" />
   </div>
@@ -32,7 +32,7 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'Avatar',
   computed: {
-    ...mapGetters(['skinClass', 'bodyClass', 'eyesClass', 'glassesClass', 'noseClass', 'mouthClass', 'hairClass', 'bookClass', 'animalClass'])
+    ...mapGetters(['skinClass', 'bodyClass', 'eyesClass', 'glassesClass', 'noseClass', 'mouthClass', 'hairClass', 'bookClass', 'animalClass', 'objectClass'])
   }
 }
 </script>

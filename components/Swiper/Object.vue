@@ -1,222 +1,202 @@
 <template>
   <SwiperMultiple name="object">
     <div
-      v-for="cake in 4"
-      :key="`cake_${cake}`"
       class="swiper-slide"
       :class="{
-        selected: `cake_${cake}` === activeItem,
+        selected: 'cake' === activeItem,
       }"
     >
       <div
         :class="{
-          'selected__wrap': `cake_${cake}` === activeItem,
+          'selected__wrap': 'cake' === activeItem,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
         <button
-          :class="`cake_${cake}`"
+          :class="`cake_1`"
           class="relative w-20 h-20 transform translate-x-2 bg-center bg-no-repeat bg-cover focus:outline-none"
           type="button"
-          @click="onClick(`cake_${cake}`)"
+          @click="onClick('cake')"
         />
       </div>
     </div>
     <div
-      v-for="charm in 4"
-      :key="`charm_${charm}`"
       class="swiper-slide"
       :class="{
-        selected: `charm_${charm}` === activeItem,
+        selected: 'charm' === activeItem,
       }"
     >
       <div
         :class="{
-          'selected__wrap': `charm_${charm}` === activeItem,
+          'selected__wrap': 'charm' === activeItem,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
         <button
-          :class="`charm_${charm}`"
+          :class="`charm_1`"
           class="relative w-20 h-20 transform translate-x-2 bg-center bg-no-repeat bg-cover focus:outline-none"
           type="button"
-          @click="onClick(`charm_${charm}`)"
+          @click="onClick('charm')"
         />
       </div>
     </div>
     <div
-      v-for="coffee in 4"
-      :key="`coffee_${coffee}`"
       class="swiper-slide"
       :class="{
-        selected: `coffee_${coffee}` === activeItem,
+        selected: 'coffee' === activeItem,
       }"
     >
       <div
         :class="{
-          'selected__wrap': `coffee_${coffee}` === activeItem,
+          'selected__wrap': 'coffee' === activeItem,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
         <button
-          :class="`coffee_${coffee}`"
+          :class="`coffee_1`"
           class="relative w-20 h-20 transform translate-x-2 bg-center bg-no-repeat bg-cover focus:outline-none"
           type="button"
-          @click="onClick(`coffee_${coffee}`)"
+          @click="onClick('coffee')"
         />
       </div>
     </div>
     <div
-      v-for="flower in 4"
-      :key="`flower_${flower}`"
       class="swiper-slide"
       :class="{
-        selected: `flower_${flower}` === activeItem,
+        selected: 'flower' === activeItem,
       }"
     >
       <div
         :class="{
-          'selected__wrap': `flower_${flower}` === activeItem,
+          'selected__wrap': 'flower' === activeItem,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
         <button
-          :class="`flower_${flower}`"
+          :class="`flower_1`"
           class="relative w-20 h-20 transform translate-x-2 bg-center bg-no-repeat bg-cover focus:outline-none"
           type="button"
-          @click="onClick(`flower_${flower}`)"
+          @click="onClick('flower')"
         />
       </div>
     </div>
     <div
-      v-for="lamp in 4"
-      :key="`lamp_${lamp}`"
       class="swiper-slide"
       :class="{
-        selected: `lamp_${lamp}` === activeItem,
+        selected: 'lamp' === activeItem,
       }"
     >
       <div
         :class="{
-          'selected__wrap': `lamp_${lamp}` === activeItem,
+          'selected__wrap': 'lamp' === activeItem,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
         <button
-          :class="`lamp_${lamp}`"
+          :class="`lamp_1`"
           class="relative w-20 h-20 transform translate-x-2 bg-center bg-no-repeat bg-cover focus:outline-none"
           type="button"
-          @click="onClick(`lamp_${lamp}`)"
+          @click="onClick('lamp')"
         />
       </div>
     </div>
     <div
-      v-for="magic in 4"
-      :key="`magic_${magic}`"
       class="swiper-slide"
       :class="{
-        selected: `magic_${magic}` === activeItem,
+        selected: 'magic' === activeItem,
       }"
     >
       <div
         :class="{
-          'selected__wrap': `magic_${magic}` === activeItem,
+          'selected__wrap': 'magic' === activeItem,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
         <button
-          :class="`magic_${magic}`"
+          :class="`magic_1`"
           class="relative w-20 h-20 transform translate-x-2 bg-center bg-no-repeat bg-cover focus:outline-none"
           type="button"
-          @click="onClick(`magic_${magic}`)"
+          @click="onClick('magic')"
         />
       </div>
     </div>
     <div
-      v-for="pen in 4"
-      :key="`pen_${pen}`"
       class="swiper-slide"
       :class="{
-        selected: `pen_${pen}` === activeItem,
+        selected: 'pen' === activeItem,
       }"
     >
       <div
         :class="{
-          'selected__wrap': `pen_${pen}` === activeItem,
+          'selected__wrap': 'pen' === activeItem,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
         <button
-          :class="`pen_${pen}`"
+          :class="`pen_1`"
           class="relative w-20 h-20 transform translate-x-2 bg-center bg-no-repeat bg-cover focus:outline-none"
           type="button"
-          @click="onClick(`pen_${pen}`)"
+          @click="onClick('pen')"
         />
       </div>
     </div>
     <div
-      v-for="tarot in 4"
-      :key="`tarot_${tarot}`"
       class="swiper-slide"
       :class="{
-        selected: `tarot_${tarot}` === activeItem,
+        selected: 'tarot' === activeItem,
       }"
     >
       <div
         :class="{
-          'selected__wrap': `tarot_${tarot}` === activeItem,
+          'selected__wrap': 'tarot' === activeItem,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
         <button
-          :class="`tarot_${tarot}`"
+          :class="`tarot_1`"
           class="relative w-20 h-20 transform translate-x-2 bg-center bg-no-repeat bg-cover focus:outline-none"
           type="button"
-          @click="onClick(`tarot_${tarot}`)"
+          @click="onClick('tarot')"
         />
       </div>
     </div>
     <div
-      v-for="lightbulb in 1"
-      :key="`lightbulb_${lightbulb}`"
       class="swiper-slide"
       :class="{
-        selected: `lightbulb_${lightbulb}` === activeItem,
+        selected: 'lightbulb' === activeItem,
       }"
     >
       <div
         :class="{
-          'selected__wrap': `lightbulb_${lightbulb}` === activeItem,
+          'selected__wrap': 'lightbulb' === activeItem,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
         <button
-          :class="`lightbulb_${lightbulb}`"
+          :class="`lightbulb_1`"
           class="relative w-20 h-20 transform translate-x-2 bg-center bg-no-repeat bg-cover focus:outline-none"
           type="button"
-          @click="onClick(`lightbulb_${lightbulb}`)"
+          @click="onClick('lightbulb')"
         />
       </div>
     </div>
     <div
-      v-for="UFO in 1"
-      :key="`UFO_${UFO}`"
       class="swiper-slide"
       :class="{
-        selected: `UFO_${UFO}` === activeItem,
+        selected: 'UFO' === activeItem,
       }"
     >
       <div
         :class="{
-          'selected__wrap': `UFO_${UFO}` === activeItem,
+          'selected__wrap': 'UFO' === activeItem,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
         <button
-          :class="`UFO_${UFO}`"
+          :class="`UFO_1`"
           class="relative w-20 h-20 transform translate-x-2 bg-center bg-no-repeat bg-cover focus:outline-none"
           type="button"
-          @click="onClick(`UFO_${UFO}`)"
+          @click="onClick('UFO')"
         />
       </div>
     </div>
@@ -235,6 +215,7 @@ export default {
     onClick (item) {
       // eslint-disable-next-line no-console
       console.log('object: ', item)
+      this.$store.commit('changeObject', item)
       this.activeItem = item
     }
   }

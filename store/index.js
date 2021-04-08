@@ -7,7 +7,8 @@ export const state = () => ({
   mouth: 1,
   hair: 1,
   book: 1,
-  animal: 1
+  animal: 1,
+  object: 'cake'
 })
 
 export const mutations = {
@@ -55,6 +56,11 @@ export const mutations = {
     // eslint-disable-next-line no-console
     console.log('payload', payload)
     state.animal = payload
+  },
+  changeObject (state, payload) {
+    // eslint-disable-next-line no-console
+    console.log('payload', payload)
+    state.object = payload
   }
 }
 
@@ -85,5 +91,8 @@ export const getters = {
   },
   animalClass (state) {
     return state.animal
+  },
+  objectClass (state) {
+    return state.object
   }
 }
