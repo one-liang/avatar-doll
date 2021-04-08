@@ -105,7 +105,7 @@
 </template>
 
 <script>
-import '~/assets/scss/material.scss'
+import '~/assets/css/material.css'
 
 export default {
   data () {
