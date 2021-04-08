@@ -5,8 +5,23 @@
         v-for="skin in 4"
         :key="`Skin_${skin}`"
         class="swiper-slide"
+        :class="{
+          selected: skin === activeItem,
+        }"
       >
-        <button :class="{selected: skin === activeItem, [`skin_${skin}`]: `skin_${skin}` }" class="relative w-20 h-20 border-2 rounded-full border-gray-dark focus:outline-none" type="button" @click="skinClick(skin)" />
+        <div
+          :class="{
+            'border-4 border-white shadow-inner': skin === activeItem,
+          }"
+          class="relative w-20 h-20 overflow-hidden border-2 rounded-full border-gray-dark"
+        >
+          <button
+            :class="`skin_${skin}`"
+            class="relative w-20 h-20 bg-no-repeat focus:outline-none"
+            type="button"
+            @click="onClick(skin)"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -40,9 +55,9 @@ export default {
     })
   },
   methods: {
-    skinClick (item) {
+    onClick (item) {
       // eslint-disable-next-line no-console
-      console.log(item)
+      console.log('skin: ', item)
       this.activeItem = item
     }
   }

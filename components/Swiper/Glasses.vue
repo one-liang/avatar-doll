@@ -1,17 +1,50 @@
 <template>
   <SwiperRows>
     <div
-      v-for="(slide, index) in 5"
-      :key="`Glasses_${index}`"
+      v-for="glasses in 8"
+      :key="`Glasses_${glasses}`"
       class="swiper-slide"
+      :class="{
+        selected: glasses === activeItem,
+      }"
     >
-      {{ slide }}
+      <div
+        :class="{
+          'border-4 border-white shadow-inner': glasses === activeItem,
+        }"
+        class="relative w-20 h-20 overflow-hidden border-2 rounded-full border-gray-dark"
+      >
+        <button
+          :class="`glasses_${glasses}`"
+          class="relative w-20 h-20 transform scale-150 -translate-x-2 translate-y-4 bg-white bg-center bg-no-repeat bg-cover focus:outline-none"
+          type="button"
+          @click="onClick(glasses)"
+        />
+      </div>
     </div>
   </SwiperRows>
 </template>
 
 <script>
 export default {
-  name: 'SwiperGlasses'
+  name: 'SwiperGlasses',
+  data () {
+    return {
+      activeItem: null
+    }
+  },
+  methods: {
+    onClick (item) {
+      // eslint-disable-next-line no-console
+      console.log('glasses: ', item)
+      this.activeItem = item
+    }
+  }
 }
 </script>
+
+<style scoped>
+::v-deep .swiper-slide {
+  @apply w-20 h-20 !important;
+}
+</style>
