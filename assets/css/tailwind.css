@@ -12,4 +12,7 @@
 
     content: "✔";
   }
+  .selected__wrap {
+    @apply border-4 border-white shadow-inner !important;
+  }
 }

@@ -10,7 +10,7 @@
     >
       <div
         :class="{
-          'border-4 border-white shadow-inner': glasses === activeItem,
+          'selected__wrap': glasses === activeItem,
         }"
         class="relative w-20 h-20 overflow-hidden border-2 rounded-full border-gray-dark"
       >
