@@ -1,4 +1,4 @@
-// 膚色
+/* 膚色 */
 .skin_1 {
   @apply bg-red-100;
 }
@@ -15,7 +15,7 @@
   @apply bg-red-400;
 }
 
-// 身體
+/* 身體 */
 .body_1 {
   background-image: url('/01_body/body_01.png');
 }
@@ -48,7 +48,7 @@
   background-image: url('/01_body/body_08.png');
 }
 
-// 頭
+/* 頭 */
 .head_1 {
   background-image: url('/02_head/head_01.png');
 }
@@ -65,7 +65,7 @@
   background-image: url('/02_head/head_04.png');
 }
 
-// 書本
+/* 書本 */
 .book_1 {
   background-image: url('/03_book/book_01.png');
 }
@@ -114,7 +114,7 @@
   background-image: url('/03_book/book_12.png');
 }
 
-// 左手
+/* 左手 */
 .left-hand_1 {
   background-image: url('/04_lefthand/lefthand_01.png');
 }
@@ -131,7 +131,7 @@
   background-image: url('/04_lefthand/lefthand_04.png');
 }
 
-// 鼻子
+/* 鼻子 */
 .nose_1 {
   background-image: url('/05_nose/nose_01.png');
 }
@@ -164,7 +164,7 @@
   background-image: url('/05_nose/nose_08.png');
 }
 
-// 眼睛
+/* 眼睛 */
 .eyes_1 {
   background-image: url('/06_eye/eyes_01.png');
 }
@@ -213,7 +213,7 @@
   background-image: url('/06_eye/eyes_12.png');
 }
 
-// 眼鏡
+/* 眼鏡 */
 .glasses_1 {
   background-image: url('/07_glasses/glasses_01.png');
 }
@@ -246,7 +246,7 @@
   background-image: url('/07_glasses/glasses_08.png');
 }
 
-// 嘴巴
+/* 嘴巴 */
 .mouth_1 {
   background-image: url('/08_mouth/mouth_01.png');
 }
@@ -295,7 +295,7 @@
   background-image: url('/08_mouth/mouth_12.png');
 }
 
-// 頭髮
+/* 頭髮 */
 .hair_1 {
   background-image: url('/12_hair/hair_01.png');
 }
@@ -376,7 +376,7 @@
   background-image: url('/12_hair/hair_20.png');
 }
 
-// 物件
+/* 物件 */
 .UFO_1 {
   background-image: url('/10_object/UFO.png');
 }
@@ -537,7 +537,7 @@
   background-image: url('/10_object/tarot_04.png');
 }
 
-// 動物
+/* 動物 */
 .animal_1 {
   background-image: url('/11_animal/animal_01.png');
 }
