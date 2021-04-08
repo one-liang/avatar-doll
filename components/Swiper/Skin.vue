@@ -33,6 +33,7 @@ export default {
       observeParents: true,
       breakpoints: {
         767: {
+          touchRatio: 0,
           spaceBetween: 12
         }
       }
@@ -57,14 +58,5 @@ export default {
 }
 ::v-deep .swiper-slide {
   @apply w-20 h-20 !important;
-}
-.selected {
-  @apply border-4 border-white !important;
-
-  &::before {
-    @apply flex items-center justify-center absolute right-0 bottom-0 bg-green text-white border-2 border-white rounded-full w-9 h-9 text-xl !important;
-
-    content: "✔";
-  }
 }
 </style>

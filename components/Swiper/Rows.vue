@@ -27,6 +27,7 @@ export default {
       observeParents: true,
       breakpoints: {
         767: {
+          touchRatio: 0,
           spaceBetween: 8
         }
       }
@@ -34,3 +35,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+::v-deep .swiper-container {
+  @apply px-5 !important;
+}
+::v-deep .swiper-wrapper {
+  @apply justify-center mx-auto;
+}
+</style>

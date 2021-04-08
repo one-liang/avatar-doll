@@ -31,6 +31,7 @@ export default {
       },
       breakpoints: {
         767: {
+          touchRatio: 0,
           spaceBetween: 8
         }
       }
