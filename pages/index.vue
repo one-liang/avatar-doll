@@ -6,9 +6,7 @@
       <!-- avatar -->
       <Avatar />
       <div class="flex items-center justify-center mx-auto mb-5 space-x-4">
-        <button class="btn" type="button">
-          隨機鈕
-        </button>
+        <RandomBtn />
         <button class="btn" type="button">
           完成！
         </button>
@@ -138,8 +136,10 @@
 
 <script>
 import '~/assets/css/material.css'
+import RandomBtn from '~/components/RandomBtn.vue'
 
 export default {
+  components: { RandomBtn },
   data () {
     return {
       tab: 'skin'

@@ -8,7 +8,8 @@ export const state = () => ({
   hair: 1,
   book: 1,
   animal: 1,
-  object: 'cake'
+  object: 'cake',
+  objectItem: ['cake', 'charm', 'coffee', 'flower', 'lamp', 'magic', 'pen', 'tarot', 'lightbulb', 'UFO']
 })
 
 export const mutations = {
@@ -61,6 +62,37 @@ export const mutations = {
     // eslint-disable-next-line no-console
     console.log('payload', payload)
     state.object = payload
+  },
+  randomAvatar (state) {
+    // head
+    state.skin = Math.ceil(Math.random() * 4)
+
+    // body
+    state.body = Math.ceil(Math.random() * 8)
+
+    // eyes
+    state.eyes = Math.ceil(Math.random() * 10)
+
+    // glasses
+    state.glasses = Math.ceil(Math.random() * 8)
+
+    // nose
+    state.nose = Math.ceil(Math.random() * 8)
+
+    // mouth
+    state.mouth = Math.ceil(Math.random() * 12)
+
+    // hair
+    state.hair = Math.ceil(Math.random() * 20)
+
+    // book
+    state.book = Math.ceil(Math.random() * 10)
+
+    // animal
+    state.animal = Math.ceil(Math.random() * 12)
+
+    // object
+    state.object = state.objectItem[Math.ceil(Math.random() * 10) - 1]
   }
 }
 
