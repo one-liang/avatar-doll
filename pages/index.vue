@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-wrap py-10 rounded-lg lg:bg-black lg:px-6 lg:bg-opacity-40 min-h-80">
+  <div
+    class="flex flex-wrap py-10 rounded-lg lg:bg-black lg:px-6 lg:bg-opacity-40 min-h-80"
+  >
     <div class="flex flex-col items-center justify-center w-full lg:w-5/12">
       <!-- avatar -->
       <div class="relative mb-6 bg-white border-8 w-52 h-52 border-gray-light">
@@ -39,54 +41,102 @@
     </div>
     <div class="w-full lg:w-7/12">
       <!-- 選項 -->
-      <ul class="flex mx-auto overflow-x-auto overflow-y-hidden text-center max-w-screen lg:mb-4 lg:flex-wrap lg:max-w-max">
+      <ul
+        class="flex mx-auto overflow-x-auto overflow-y-hidden text-center max-w-screen lg:mb-4 lg:flex-wrap lg:max-w-max"
+      >
         <li class="flex-1 lg:mr-4 lg:mb-4">
-          <button :class="[tab === 'skin' ? 'bg-purple-lighter' : 'bg-purple-light']" class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none" @click="tab = 'skin'">
+          <button
+            :class="[tab === 'skin' ? 'bg-purple-lighter' : 'bg-purple-light']"
+            class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none"
+            @click="tab = 'skin'"
+          >
             膚色
           </button>
         </li>
         <li class="flex-1 lg:mr-4 lg:mb-4">
-          <button :class="[tab === 'body' ? 'bg-purple-lighter' : 'bg-purple-light']" class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none" @click="tab = 'body'">
+          <button
+            :class="[tab === 'body' ? 'bg-purple-lighter' : 'bg-purple-light']"
+            class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none"
+            @click="tab = 'body'"
+          >
             衣服
           </button>
         </li>
         <li class="flex-1 lg:mr-4 lg:mb-4">
-          <button :class="[tab === 'eyes' ? 'bg-purple-lighter' : 'bg-purple-light']" class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none" @click="tab = 'eyes'">
+          <button
+            :class="[tab === 'eyes' ? 'bg-purple-lighter' : 'bg-purple-light']"
+            class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none"
+            @click="tab = 'eyes'"
+          >
             眼睛
           </button>
         </li>
         <li class="flex-1 lg:mr-4 lg:mb-4">
-          <button :class="[tab === 'glasses' ? 'bg-purple-lighter' : 'bg-purple-light']" class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none" @click="tab = 'glasses'">
+          <button
+            :class="[
+              tab === 'glasses' ? 'bg-purple-lighter' : 'bg-purple-light',
+            ]"
+            class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none"
+            @click="tab = 'glasses'"
+          >
             眼鏡
           </button>
         </li>
         <li class="flex-1 lg:mb-4">
-          <button :class="[tab === 'nose' ? 'bg-purple-lighter' : 'bg-purple-light']" class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none" @click="tab = 'nose'">
+          <button
+            :class="[tab === 'nose' ? 'bg-purple-lighter' : 'bg-purple-light']"
+            class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none"
+            @click="tab = 'nose'"
+          >
             鼻子
           </button>
         </li>
         <li class="flex-1 lg:mr-4 lg:mb-4">
-          <button :class="[tab === 'mouth' ? 'bg-purple-lighter' : 'bg-purple-light']" class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none" @click="tab = 'mouth'">
+          <button
+            :class="[tab === 'mouth' ? 'bg-purple-lighter' : 'bg-purple-light']"
+            class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none"
+            @click="tab = 'mouth'"
+          >
             嘴巴
           </button>
         </li>
         <li class="flex-1 lg:mr-4 lg:mb-4">
-          <button :class="[tab === 'hair' ? 'bg-purple-lighter' : 'bg-purple-light']" class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none" @click="tab = 'hair'">
+          <button
+            :class="[tab === 'hair' ? 'bg-purple-lighter' : 'bg-purple-light']"
+            class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none"
+            @click="tab = 'hair'"
+          >
             頭髮
           </button>
         </li>
         <li class="flex-1 lg:mr-4 lg:mb-4">
-          <button :class="[tab === 'book' ? 'bg-purple-lighter' : 'bg-purple-light']" class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none" @click="tab = 'book'">
+          <button
+            :class="[tab === 'book' ? 'bg-purple-lighter' : 'bg-purple-light']"
+            class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none"
+            @click="tab = 'book'"
+          >
             書本
           </button>
         </li>
         <li class="flex-1 lg:mr-4 lg:mb-4">
-          <button :class="[tab === 'object' ? 'bg-purple-lighter' : 'bg-purple-light']" class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none" @click="tab = 'object'">
+          <button
+            :class="[
+              tab === 'object' ? 'bg-purple-lighter' : 'bg-purple-light',
+            ]"
+            class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none"
+            @click="tab = 'object'"
+          >
             配件
           </button>
         </li>
         <li class="flex-1 lg:mb-4">
-          <button :class="[tab === 'animal' ? 'bg-purple-lighter' : 'bg-purple-light']" class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none" @click="tab = 'animal'">
+          <button
+            :class="[
+              tab === 'animal' ? 'bg-purple-lighter' : 'bg-purple-light',
+            ]"
+            class="w-24 py-2 m-0 font-black rounded-t-lg lg:w-16 lg:rounded-lg focus:outline-none"
+            @click="tab = 'animal'"
+          >
             動物
           </button>
         </li>
@@ -94,11 +144,13 @@
 
       <!-- 選項內容 -->
       <div class="h-full py-4 mx-auto bg-purple-lighter lg:bg-transparent">
-        <SwiperSkin v-if="tab === 'skin'" />
-        <SwiperBody v-else-if="tab === 'body'" />
-        <SwiperMouth v-else-if="tab === 'mouth'" />
-        <SwiperGlasses v-else-if="tab === 'glasses'" />
-        <SwiperNose v-else-if="tab === 'nose'" />
+        <keep-alive>
+          <SwiperSkin v-if="tab === 'skin'" />
+          <SwiperBody v-else-if="tab === 'body'" />
+          <SwiperMouth v-else-if="tab === 'mouth'" />
+          <SwiperGlasses v-else-if="tab === 'glasses'" />
+          <SwiperNose v-else-if="tab === 'nose'" />
+        </keep-alive>
       </div>
     </div>
   </div>
