@@ -13,7 +13,7 @@
           :class="{
             'selected__wrap': skin === activeItem,
           }"
-          class="relative w-20 h-20 overflow-hidden border-2 rounded-full border-gray-dark"
+          class="relative w-20 h-20 overflow-hidden border-2 rounded-full border-gray-dark bg-white"
         >
           <button
             :class="`skin_${skin}`"

@@ -1,33 +1,33 @@
 <template>
-  <SwiperRows>
+  <SwiperMultiple name="eyes">
     <div
-      v-for="nose in 8"
-      :key="`Nose_${nose}`"
+      v-for="eyes in 12"
+      :key="`Eyes_${eyes}`"
       class="swiper-slide"
       :class="{
-        selected: nose === activeItem,
+        selected: eyes === activeItem,
       }"
     >
       <div
         :class="{
-          'selected__wrap': nose === activeItem,
+          'selected__wrap': eyes === activeItem,
         }"
         class="relative w-20 h-20 overflow-hidden border-2 rounded-full border-gray-dark bg-white"
       >
         <button
-          :class="`nose_${nose}`"
-          class="relative w-20 h-20 transform -translate-x-3 translate-y-4 bg-white bg-center bg-no-repeat bg-cover scale-200 focus:outline-none"
+          :class="`eyes_${eyes}`"
+          class="relative w-20 h-20 transform scale-150 -translate-x-2 translate-y-4 bg-center bg-no-repeat bg-cover focus:outline-none"
           type="button"
-          @click="onClick(nose)"
+          @click="onClick(eyes)"
         />
       </div>
     </div>
-  </SwiperRows>
+  </SwiperMultiple>
 </template>
 
 <script>
 export default {
-  name: 'SwiperNose',
+  name: 'SwiperEyes',
   data () {
     return {
       activeItem: null
@@ -36,7 +36,7 @@ export default {
   methods: {
     onClick (item) {
       // eslint-disable-next-line no-console
-      console.log('nose: ', item)
+      console.log('eyes: ', item)
       this.activeItem = item
     }
   }

@@ -12,11 +12,11 @@
         :class="{
           'selected__wrap': glasses === activeItem,
         }"
-        class="relative w-20 h-20 overflow-hidden border-2 rounded-full border-gray-dark"
+        class="relative w-20 h-20 overflow-hidden border-2 rounded-full border-gray-dark bg-white"
       >
         <button
           :class="`glasses_${glasses}`"
-          class="relative w-20 h-20 transform scale-150 -translate-x-2 translate-y-4 bg-white bg-center bg-no-repeat bg-cover focus:outline-none"
+          class="relative w-20 h-20 transform scale-150 -translate-x-2 translate-y-4 bg-center bg-no-repeat bg-cover focus:outline-none"
           type="button"
           @click="onClick(glasses)"
         />
