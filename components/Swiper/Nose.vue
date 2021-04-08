@@ -5,12 +5,12 @@
       :key="`Nose_${nose}`"
       class="swiper-slide"
       :class="{
-        selected: nose === activeItem,
+        selected: nose === noseClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': nose === activeItem,
+          'selected__wrap': nose === noseClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -26,19 +26,18 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'SwiperNose',
-  data () {
-    return {
-      activeItem: null
-    }
+  computed: {
+    ...mapGetters(['noseClass'])
   },
   methods: {
     onClick (item) {
       // eslint-disable-next-line no-console
       console.log('nose: ', item)
       this.$store.commit('changeNose', item)
-      this.activeItem = item
     }
   }
 }

@@ -6,12 +6,12 @@
         :key="`Skin_${skin}`"
         class="swiper-slide"
         :class="{
-          selected: skin === activeItem,
+          selected: skin === skinClass,
         }"
       >
         <div
           :class="{
-            'selected__wrap': skin === activeItem,
+            'selected__wrap': skin === skinClass,
           }"
           class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
         >
@@ -31,14 +31,17 @@
 // eslint-disable-next-line import/no-named-as-default
 import Swiper from 'swiper/bundle'
 import 'swiper/swiper-bundle.min.css'
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'SwiperSkin',
   data () {
     return {
-      swiper: null,
-      activeItem: null
+      swiper: null
     }
+  },
+  computed: {
+    ...mapGetters(['skinClass'])
   },
   mounted () {
     this.swiper = new Swiper(this.$refs.single, {
@@ -59,7 +62,6 @@ export default {
       // eslint-disable-next-line no-console
       console.log('skin: ', item)
       this.$store.commit('changeSkin', item)
-      this.activeItem = item
     }
   }
 }

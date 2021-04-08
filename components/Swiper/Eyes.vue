@@ -5,12 +5,12 @@
       :key="`Eyes_${eyes}`"
       class="swiper-slide"
       :class="{
-        selected: eyes === activeItem,
+        selected: eyes === eyesClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': eyes === activeItem,
+          'selected__wrap': eyes === eyesClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -26,19 +26,18 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'SwiperEyes',
-  data () {
-    return {
-      activeItem: null
-    }
+  computed: {
+    ...mapGetters(['eyesClass'])
   },
   methods: {
     onClick (item) {
       // eslint-disable-next-line no-console
       console.log('eyes: ', item)
       this.$store.commit('changeEyes', item)
-      this.activeItem = item
     }
   }
 }

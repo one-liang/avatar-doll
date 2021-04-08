@@ -5,12 +5,12 @@
       :key="`Animal_${animal}`"
       class="swiper-slide"
       :class="{
-        selected: animal === activeItem,
+        selected: animal === animalClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': animal === activeItem,
+          'selected__wrap': animal === animalClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -26,19 +26,18 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'SwiperAnimal',
-  data () {
-    return {
-      activeItem: null
-    }
+  computed: {
+    ...mapGetters(['animalClass'])
   },
   methods: {
     onClick (item) {
       // eslint-disable-next-line no-console
       console.log('animal: ', item)
       this.$store.commit('changeAnimal', item)
-      this.activeItem = item
     }
   }
 }

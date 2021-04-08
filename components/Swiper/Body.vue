@@ -5,12 +5,12 @@
       :key="`Body_${body}`"
       class="swiper-slide"
       :class="{
-        selected: body === activeItem,
+        selected: body === bodyClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': body === activeItem,
+          'selected__wrap': body === bodyClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -26,19 +26,18 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'SwiperBody',
-  data () {
-    return {
-      activeItem: null
-    }
+  computed: {
+    ...mapGetters(['bodyClass'])
   },
   methods: {
     onClick (item) {
       // eslint-disable-next-line no-console
       console.log('body: ', item)
       this.$store.commit('changeBody', item)
-      this.activeItem = item
     }
   }
 }

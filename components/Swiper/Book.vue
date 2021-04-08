@@ -5,12 +5,12 @@
       :key="`Book_${book}`"
       class="swiper-slide"
       :class="{
-        selected: book === activeItem,
+        selected: book === bookClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': book === activeItem,
+          'selected__wrap': book === bookClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -26,19 +26,18 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'SwiperBook',
-  data () {
-    return {
-      activeItem: null
-    }
+  computed: {
+    ...mapGetters(['bookClass'])
   },
   methods: {
     onClick (item) {
       // eslint-disable-next-line no-console
       console.log('book: ', item)
       this.$store.commit('changeBook', item)
-      this.activeItem = item
     }
   }
 }

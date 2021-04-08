@@ -5,12 +5,12 @@
       :key="`Mouth_${mouth}`"
       class="swiper-slide"
       :class="{
-        selected: mouth === activeItem,
+        selected: mouth === mouthClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': mouth === activeItem,
+          'selected__wrap': mouth === mouthClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -26,19 +26,18 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'SwiperMouth',
-  data () {
-    return {
-      activeItem: null
-    }
+  computed: {
+    ...mapGetters(['mouthClass'])
   },
   methods: {
     onClick (item) {
       // eslint-disable-next-line no-console
       console.log('mouth: ', item)
       this.$store.commit('changeMouth', item)
-      this.activeItem = item
     }
   }
 }

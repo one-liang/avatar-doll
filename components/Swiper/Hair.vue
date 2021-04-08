@@ -5,12 +5,12 @@
       :key="`Hair_${hair}`"
       class="swiper-slide"
       :class="{
-        selected: hair === activeItem,
+        selected: hair === hairClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': hair === activeItem,
+          'selected__wrap': hair === hairClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -26,19 +26,18 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'SwiperHair',
-  data () {
-    return {
-      activeItem: null
-    }
+  computed: {
+    ...mapGetters(['hairClass'])
   },
   methods: {
     onClick (item) {
       // eslint-disable-next-line no-console
       console.log('hair: ', item)
       this.$store.commit('changeHair', item)
-      this.activeItem = item
     }
   }
 }

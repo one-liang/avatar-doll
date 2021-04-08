@@ -3,12 +3,12 @@
     <div
       class="swiper-slide"
       :class="{
-        selected: 'cake' === activeItem,
+        selected: 'cake' === objectClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': 'cake' === activeItem,
+          'selected__wrap': 'cake' === objectClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -23,12 +23,12 @@
     <div
       class="swiper-slide"
       :class="{
-        selected: 'charm' === activeItem,
+        selected: 'charm' === objectClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': 'charm' === activeItem,
+          'selected__wrap': 'charm' === objectClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -43,12 +43,12 @@
     <div
       class="swiper-slide"
       :class="{
-        selected: 'coffee' === activeItem,
+        selected: 'coffee' === objectClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': 'coffee' === activeItem,
+          'selected__wrap': 'coffee' === objectClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -63,12 +63,12 @@
     <div
       class="swiper-slide"
       :class="{
-        selected: 'flower' === activeItem,
+        selected: 'flower' === objectClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': 'flower' === activeItem,
+          'selected__wrap': 'flower' === objectClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -83,12 +83,12 @@
     <div
       class="swiper-slide"
       :class="{
-        selected: 'lamp' === activeItem,
+        selected: 'lamp' === objectClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': 'lamp' === activeItem,
+          'selected__wrap': 'lamp' === objectClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -103,12 +103,12 @@
     <div
       class="swiper-slide"
       :class="{
-        selected: 'magic' === activeItem,
+        selected: 'magic' === objectClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': 'magic' === activeItem,
+          'selected__wrap': 'magic' === objectClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -123,12 +123,12 @@
     <div
       class="swiper-slide"
       :class="{
-        selected: 'pen' === activeItem,
+        selected: 'pen' === objectClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': 'pen' === activeItem,
+          'selected__wrap': 'pen' === objectClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -143,12 +143,12 @@
     <div
       class="swiper-slide"
       :class="{
-        selected: 'tarot' === activeItem,
+        selected: 'tarot' === objectClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': 'tarot' === activeItem,
+          'selected__wrap': 'tarot' === objectClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -163,12 +163,12 @@
     <div
       class="swiper-slide"
       :class="{
-        selected: 'lightbulb' === activeItem,
+        selected: 'lightbulb' === objectClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': 'lightbulb' === activeItem,
+          'selected__wrap': 'lightbulb' === objectClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -183,12 +183,12 @@
     <div
       class="swiper-slide"
       :class="{
-        selected: 'UFO' === activeItem,
+        selected: 'UFO' === objectClass,
       }"
     >
       <div
         :class="{
-          'selected__wrap': 'UFO' === activeItem,
+          'selected__wrap': 'UFO' === objectClass,
         }"
         class="relative w-20 h-20 overflow-hidden bg-white border-2 rounded-full border-gray-dark"
       >
@@ -204,19 +204,18 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'SwiperObject',
-  data () {
-    return {
-      activeItem: null
-    }
+  computed: {
+    ...mapGetters(['objectClass'])
   },
   methods: {
     onClick (item) {
       // eslint-disable-next-line no-console
       console.log('object: ', item)
       this.$store.commit('changeObject', item)
-      this.activeItem = item
     }
   }
 }
