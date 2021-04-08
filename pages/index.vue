@@ -143,13 +143,18 @@
       </ul>
 
       <!-- 選項內容 -->
-      <div class="h-full py-4 mx-auto bg-purple-lighter lg:bg-transparent">
+      <div class="h-full max-w-sm py-4 mx-auto lg:max-w-full bg-purple-lighter lg:bg-transparent">
         <keep-alive>
           <SwiperSkin v-if="tab === 'skin'" />
           <SwiperBody v-else-if="tab === 'body'" />
-          <SwiperMouth v-else-if="tab === 'mouth'" />
+          <SwiperEyes v-else-if="tab === 'eyes'" />
           <SwiperGlasses v-else-if="tab === 'glasses'" />
           <SwiperNose v-else-if="tab === 'nose'" />
+          <SwiperMouth v-else-if="tab === 'mouth'" />
+          <SwiperHair v-else-if="tab === 'hair'" />
+          <SwiperBook v-else-if="tab === 'book'" />
+          <SwiperObject v-else-if="tab === 'object'" />
+          <SwiperAnimal v-else-if="tab === 'animal'" />
         </keep-alive>
       </div>
     </div>

@@ -27,8 +27,8 @@ export default {
       observeParents: true,
       breakpoints: {
         767: {
-          touchRatio: 0,
-          spaceBetween: 12
+          touchRatio: 0
+          // spaceBetween: 12
         }
       }
     })
