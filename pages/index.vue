@@ -7,9 +7,7 @@
       <Avatar />
       <div class="flex items-center justify-center mx-auto mb-5 space-x-4">
         <RandomBtn />
-        <button class="btn" type="button">
-          完成！
-        </button>
+        <DomToImageBtn />
       </div>
     </div>
     <div class="w-full lg:w-7/12">
@@ -136,10 +134,11 @@
 
 <script>
 import '~/assets/css/material.css'
+import DomToImageBtn from '~/components/DomToImageBtn.vue'
 import RandomBtn from '~/components/RandomBtn.vue'
 
 export default {
-  components: { RandomBtn },
+  components: { RandomBtn, DomToImageBtn },
   data () {
     return {
       tab: 'skin'

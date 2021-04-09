@@ -1,5 +1,5 @@
 <template>
-  <div class="relative mb-6 bg-white border-8 w-52 h-52 border-gray-light">
+  <div id="avatar" class="avatar">
     <!-- 膚色 + 左手 + 配件 // head + left-hand + object -->
     <!-- 衣服 -->
     <div ref="body" :class="`body_${bodyClass}`" class="z-1 layer" />
@@ -38,6 +38,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.avatar {
+  @apply relative mb-8 bg-white w-60 h-60;
+
+  outline: 8px solid #E2E2E2;
+}
 // 圖層樣式
 .layer {
   @apply absolute inset-0 bg-center bg-cover w-full h-full;
