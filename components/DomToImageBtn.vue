@@ -14,10 +14,12 @@ export default {
       const avatar = document.querySelector('#avatar')
       domtoimage
         .toPng(avatar)
-        .then(function (dataUrl) {
-          const img = new Image()
-          img.src = dataUrl
-          document.body.appendChild(img)
+        .then((dataUrl) => {
+          // const img = new Image()
+          this.$store.commit('domToImage', dataUrl)
+          // img.src = dataUrl
+          // document.body.appendChild(img)
+          this.$router.push('/select')
         })
         .catch(function (error) {
           // eslint-disable-next-line no-console

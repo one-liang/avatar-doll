@@ -9,7 +9,8 @@ export const state = () => ({
   book: 1,
   animal: 1,
   object: 'cake',
-  objectItem: ['cake', 'charm', 'coffee', 'flower', 'lamp', 'magic', 'pen', 'tarot', 'lightbulb', 'UFO']
+  objectItem: ['cake', 'charm', 'coffee', 'flower', 'lamp', 'magic', 'pen', 'tarot', 'lightbulb', 'UFO'],
+  avatar: ''
 })
 
 export const mutations = {
@@ -93,6 +94,9 @@ export const mutations = {
 
     // object
     state.object = state.objectItem[Math.ceil(Math.random() * 10) - 1]
+  },
+  domToImage (state, payload) {
+    state.avatar = payload
   }
 }
 
