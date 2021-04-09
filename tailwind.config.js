@@ -6,28 +6,56 @@
  */
 module.exports = {
   theme: {
-    colors: {
-      purple: {
-        default: '#585A78',
-        light: '#5B5D6C',
-        lighter: '#B7BCD5',
-        dark: '#313241'
+    fontFamily: {
+      sans: ['Roboto', 'Microsoft JhengHei', 'sans-serif']
+    },
+    extend: {
+      colors: {
+        purple: {
+          DEFAULT: '#585A78',
+          light: '#5B5D6C',
+          lighter: '#B7BCD5',
+          dark: '#313241'
+        },
+        gray: {
+          DEFAULT: '#CBCBCB',
+          light: '#E2E2E2',
+          dark: '#636363',
+          darker: '#242424'
+        },
+        red: {
+          100: '#FFE2DD',
+          200: '#F4CDBB',
+          300: '#E3B3A6',
+          400: '#D69280'
+        },
+        cyan: '#C6E4D6',
+        yellow: '#EAF092',
+        green: '#0FB5B1'
       },
-      gray: {
-        default: '#CBCBCB',
-        light: '#E2E2E2',
-        dark: '#636363',
-        darker: '#242424'
+      minHeight: {
+        80: '20rem',
+        96: '24rem'
       },
-      red: {
-        100: 'FFE2DD',
-        200: 'F4CDBB',
-        300: 'E3B3A6',
-        400: 'D69280'
+      maxWidth: {
+        screen: '100vw'
       },
-      cyan: '#C6E4D6',
-      yellow: '#EAF092',
-      green: '#0FB5B1'
+      zIndex: {
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4,
+        5: 5,
+        6: 6,
+        7: 7,
+        8: 8,
+        9: 9,
+        11: 11,
+        12: 12
+      },
+      scale: {
+        200: '2'
+      }
     }
   },
   variants: {},

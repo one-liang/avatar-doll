@@ -1,17 +1,18 @@
 <template>
   <div>
-    <h1 class="text-3xl">
-      text
-    </h1>
+    <div>
+      <img :src="avatarImage">
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Select'
+  name: 'Select',
+  computed: {
+    avatarImage () {
+      return this.$store.state.avatar
+    }
+  }
 }
 </script>
-
-<style lang="scss" scoped>
-@import url("~/assets/select.scss");
-</style>
