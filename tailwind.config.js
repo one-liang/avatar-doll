@@ -41,6 +41,7 @@ module.exports = {
         screen: '100vw'
       },
       zIndex: {
+        '-1': -1,
         1: 1,
         2: 2,
         3: 3,
