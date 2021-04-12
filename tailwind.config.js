@@ -38,6 +38,7 @@ module.exports = {
         96: '24rem'
       },
       maxWidth: {
+        'screen-xs': '375px',
         screen: '100vw'
       },
       zIndex: {

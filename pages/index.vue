@@ -10,10 +10,10 @@
         <DomToImageBtn />
       </div>
     </div>
-    <div class="w-full lg:w-7/12">
+    <div class="w-full sm:max-w-full max-w-screen-xs lg:w-7/12">
       <!-- 選項 -->
       <ul
-        class="flex mx-auto overflow-x-auto overflow-y-hidden text-center max-w-screen lg:mb-4 lg:flex-wrap lg:max-w-max"
+        class="flex max-w-sm mx-auto overflow-x-auto overflow-y-hidden text-center lg:mb-4 lg:flex-wrap lg:max-w-max"
       >
         <li class="flex-1 lg:mr-4 lg:mb-4">
           <button
@@ -114,7 +114,7 @@
       </ul>
 
       <!-- 選項內容 -->
-      <div class="h-full max-w-sm py-4 mx-auto lg:max-w-full bg-purple-lighter lg:bg-transparent">
+      <div class="max-w-sm py-4 mx-auto lg:max-w-full bg-purple-lighter lg:bg-transparent">
         <keep-alive>
           <SwiperSkin v-if="tab === 'skin'" />
           <SwiperBody v-else-if="tab === 'body'" />
