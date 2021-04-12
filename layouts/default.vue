@@ -12,7 +12,7 @@
 
 <style lang="scss">
 body {
-  @apply min-h-screen bg-purple-dark flex items-center justify-center;
+  @apply min-h-screen bg-gradient-to-r from-purple-dark to-blue-900 flex items-center justify-center;
 }
 
 // star animate
