@@ -20,7 +20,7 @@ export default {
             this.$nuxt.$loading.start()
             setTimeout(() => {
               this.$nuxt.$loading.finish()
-              this.$router.push('/select')
+              this.$router.push('/finish')
             }, 1000)
           })
         })

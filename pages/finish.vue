@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'Select',
+  name: 'Finish',
   computed: {
     avatarImage () {
       return this.$store.state.avatar
