@@ -62,6 +62,10 @@ export default {
   &::after {
     @apply text-xl;
   }
+
+  &:focus {
+    @apply outline-none;
+  }
 }
 ::v-deep .swiper-button-prev {
   @apply left-0;

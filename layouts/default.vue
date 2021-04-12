@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <div class="w-full h-full">
-      <Nuxt class="max-w-screen-md mx-auto" />
-    </div>
+  <div class="py-6">
+    <Nuxt class="max-w-screen-md mx-auto" />
 
     <div class="fixed top-0 left-0 w-screen h-screen overflow-hidden -z-1">
       <div class="dot-bg left-top" />
@@ -31,22 +29,23 @@ body {
   max-height: 415px;
   background-image: url("/avatar-doll/other/dot-bg.png");
   position: absolute;
+  opacity: 0.5;
 }
 
 .dot-bg.left-top {
-  left: 27%;
-  top: 17%;
+  left: 18%;
+  top: -7%;
 }
 
 .dot-bg.left-bot {
-  left: 19%;
+  left: 11%;
   bottom: 7%;
-  transform: rotate(-180deg) scale(0.7);
+  transform: rotate(120deg) scale(0.7);
 }
 
 .dot-bg.right-bot {
-  right: 21%;
-  bottom: 13%;
+  right: 16%;
+  bottom: 4%;
   transform: rotate(-180deg) scale(1.2);
 }
 
@@ -57,8 +56,9 @@ body {
   max-height: 80px;
   background-image: url("/avatar-doll/other/dot-01.png");
   position: absolute;
-  left: 20%;
+  left: 11%;
   bottom: 33%;
+  opacity: 0.5;
 }
 
 .dot-02 {
@@ -69,7 +69,8 @@ body {
   background-image: url("/avatar-doll/other/dot-02.png");
   position: absolute;
   left: 46%;
-  bottom: 38%;
+  bottom: 20%;
+  opacity: 0.5;
 }
 
 // star animate
