@@ -1,6 +1,6 @@
 <template>
   <div class="py-6">
-    <Nuxt class="max-w-screen-md mx-auto" />
+    <Nuxt class="max-w-screen-md mx-auto transform lg:-translate-y-16" />
 
     <div class="fixed top-0 left-0 w-screen h-screen overflow-hidden -z-1">
       <div class="dot-bg left-top" />
@@ -148,6 +148,33 @@ $shadows-big: multiple-box-shadow(100);
   }
   to {
     transform: translateY(-2000px);
+  }
+}
+
+.btn {
+  @apply relative overflow-hidden px-4 py-2 text-xl font-black text-white border-2 border-white w-28 transition-colors duration-200 z-10 focus:outline-none;
+
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  &:hover {
+    color: #313241;
+
+    &::before {
+      transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+    }
   }
 }
 

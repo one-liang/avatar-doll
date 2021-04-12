@@ -158,33 +158,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.btn {
-  @apply relative overflow-hidden px-4 py-2 text-xl font-black text-white border-2 border-white w-28 transition-colors duration-200 z-10 focus:outline-none;
-
-  &::before {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    background-color: #ffffff;
-    transform-origin: center;
-    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
-    transition: transform 0.4s ease-in-out;
-  }
-
-  &:hover {
-    color: #313241;
-
-    &::before {
-      transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
-    }
-  }
-}
-
 // 圖層樣式
 .layer {
   @apply absolute inset-0 bg-center bg-cover w-full h-full;
