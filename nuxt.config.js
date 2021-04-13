@@ -20,13 +20,13 @@ export default {
       { hid: 'description', name: 'description', content: '手繪製作專屬個人風格的頭像' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/avatar-doll/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap' }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/css/material'],
 
   loading: '~/components/Loading.vue',
 
