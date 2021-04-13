@@ -15,11 +15,14 @@ export default {
       domtoimage
         .toPng(avatar)
         .then((dataUrl) => {
-          // const img = new Image()
           this.$store.commit('domToImage', dataUrl)
-          // img.src = dataUrl
-          // document.body.appendChild(img)
-          this.$router.push('/select')
+          this.$nextTick(() => {
+            this.$nuxt.$loading.start()
+            setTimeout(() => {
+              this.$nuxt.$loading.finish()
+              this.$router.push('/finish')
+            }, 1000)
+          })
         })
         .catch(function (error) {
           // eslint-disable-next-line no-console
