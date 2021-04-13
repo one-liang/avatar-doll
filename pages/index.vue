@@ -146,8 +146,6 @@
 </template>
 
 <script>
-import '~/assets/css/material.css'
-
 export default {
   data () {
     return {
