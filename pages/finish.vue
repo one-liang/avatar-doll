@@ -20,25 +20,25 @@
       </div>
 
       <div class="w-full px-0 pt-3 pb-8 text-center lg:py-3 lg:w-7/12 sm:max-w-full max-w-screen-xs col-md-7 col-12 py-md-4 pl-md-0 pr-md-3">
-        <h3 class="text-2xl font-black leading-normal tracking-wider text-center text-purple-lighter">
+        <h2 class="text-4xl font-black tracking-widest text-center text-purple-lighter">
+          恭喜您
+        </h2>
+        <h3 class="mb-1 text-2xl font-black leading-normal tracking-wider text-center text-purple-lighter">
           您的大頭貼完成了！
         </h3>
         <p class="text-center text-white ">
           是不是非常可愛呢？
         </p>
         <div class="text-center">
-          <img class="mx-auto " src="/avatar-doll/other/gift-pins.png">
+          <img class="w-40 mx-auto" src="/avatar-doll/other/gift-pins.png">
         </div>
-        <h3 class="mb-3 text-lg font-black text-yellow l">
-          <span class="text-2xl">想要獲得</span>
-          <br>這張大頭貼的鏡子+磁鐵徽章組嗎？
+        <h3 class="mb-4 text-lg font-black text-yellow l">
+          <span class="text-2xl">客製化風格</span>
+          <br>希望您會喜歡，點選下方可再玩一次
         </h3>
-        <p class="mb-5 text-white">
-          立刻使用下方"分享我"功能，<br>就有機會獲得專屬於你的客製化獎品喔~
-        </p>
-        <button class="btn" type="button">
-          分享我
-        </button>
+        <NuxtLink to="/" class="block mx-auto btn">
+          再一次
+        </NuxtLink>
       </div>
     </div>
   </div>
