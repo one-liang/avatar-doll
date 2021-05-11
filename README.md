@@ -1,4 +1,4 @@
-# [avatar-doll](https://one-liang.github.io/avatar-doll)
+# [似顏繪](https://one-liang.github.io/avatar-doll)
 
 - Website powered by [Nuxt](https://nuxtjs.org/)
 - JavaScript Framework: [Vue](https://vuejs.org/)
