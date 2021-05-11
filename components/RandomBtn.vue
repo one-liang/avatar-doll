@@ -7,6 +7,9 @@
 <script>
 export default {
   name: 'RandomBtn',
+  mounted () {
+    this.onClick()
+  },
   methods: {
     onClick () {
       this.$store.commit('randomAvatar')

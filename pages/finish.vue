@@ -51,6 +51,11 @@ export default {
     avatarImage () {
       return this.$store.state.avatar
     }
+  },
+  mounted () {
+    if (this.avatarImage === undefined || this.avatarImage === '') {
+      this.$router.push('/')
+    }
   }
 }
 </script>
