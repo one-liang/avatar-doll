@@ -1,5 +1,9 @@
 # [avatar-doll](https://one-liang.github.io/avatar-doll)
 
+- Website powered by [Nuxt](https://nuxtjs.org/)
+- JavaScript Framework: [Vue](https://vuejs.org/)
+- CSS Framework: [TailwindCSS](https://tailwindcss.com/)
+
 ## Build Setup
 
 ```bash
