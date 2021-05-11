@@ -1,6 +1,7 @@
 <template>
-  <div class="py-6">
-    <Nuxt class="max-w-screen-md mx-auto transform lg:-translate-y-16" />
+  <div class="py-6 overflow-hidden">
+    <Starting v-if="!close" :close.sync="close" />
+    <Nuxt class="max-w-screen-md mx-auto lg:mb-16" />
 
     <div class="fixed top-0 left-0 w-screen h-screen overflow-hidden -z-1">
       <div class="dot-bg left-top" />
@@ -15,6 +16,16 @@
     <Footer />
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      close: false
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 body {
