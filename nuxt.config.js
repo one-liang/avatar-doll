@@ -17,7 +17,48 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=0' },
-      { hid: 'description', name: 'description', content: '手繪製作專屬個人風格的頭像' }
+      { hid: 'description', name: 'description', content: '手繪製作專屬個人風格的頭像' },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: '【似顏繪】手繪頭像'
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content:
+        '手繪製作專屬個人風格的頭像'
+      },
+      {
+        hid: 'og:type',
+        name: 'og:type',
+        content: 'website'
+      },
+      {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        content: '【似顏繪】手繪頭像'
+      },
+      {
+        hid: 'og:image',
+        name: 'og:image',
+        content: '/avatar-doll/other/mainpic-mirror.png'
+      },
+      {
+        hid: 'og:image:type',
+        name: 'og:image:type',
+        content: 'image/png'
+      },
+      {
+        hid: 'og:image:width',
+        name: 'og:image:width',
+        content: '640'
+      },
+      {
+        hid: 'og:image:height',
+        name: 'og:image:height',
+        content: '640'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/avatar-doll/favicon.ico' },
